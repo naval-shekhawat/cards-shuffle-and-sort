@@ -1,0 +1,53 @@
+.main-container {
+    background-color: #FFFFFF;
+    flex-direction: column;
+}
+
+.buttons {
+    justify-content: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    background-color: #EFEFEF;
+    min-height: 45px;
+    margin: 0 10px 5px 10px;
+    flex-grow:1;
+}
+
+.cards::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    max-height: 45px;
+    width: 4px;
+}
+
+.card {
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-1::before, .color-8::before {
+    background-color:  #333333;
+}
+
+.color-2::before, .color-4::before {
+    background-color: #2B8EAD;
+}
+
+.color-3::before, .color-5::before, .color-9::before  {
+    background-color:  #72C3DC;
+}
+
+.color-6::before, .color-7::before {
+    background-color: #6F98A8;
+}
+
+
